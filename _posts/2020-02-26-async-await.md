@@ -14,3 +14,6 @@ const func = async (arg) => {
 }
 {% endhighlight %}
 
+Video:
+
+{% include youtubePlayer.html id='Wo0qiGPSV-s' %}
