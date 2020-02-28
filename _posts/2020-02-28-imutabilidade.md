@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Imutabilidade"
-date:   2020-02-26 17:18:58 -0300
+date:   2020-02-28 17:18:58 -0300
 categories: programacao js
 ---
 Ao falar sobre imutabilidade o pensamento que nos vem a cabeça é: _simples, é só fazer cópia das variáveis ao invés de manipular a mesma_.  
