@@ -94,6 +94,6 @@ Dessa forma, é preferivel trabalhar com a lib ao invés de manipular arrays na 
 
 Aqui foi colocado um exemplo bem simples do Mori, mas vale dar uma olhada na documentação da lib pois tem várias funções maneiras para trabalhar com objetos e arrays, bem como a explicação mais detalhada de como a lib em si funciona.
 
-Para fazer esse post, eu me baseei nesse vídeo da Anjana Vakil na [jsconf.eu 2019](https://jsconf.eu) onde ela explica o esquema de acesso aos atributos por árvore, hashs e conversão desses hashs em binário. Ela mostra também exemplos com o Mori e com uma lib do Facebook chamada [ImmutableJS](https://immutable-js.github.io/immutable-js/) para cenários de imutabilidade com esse acabamos de analisar. 
+Para fazer esse post, eu me baseei nesse vídeo da [Anjana Vakil](https://twitter.com/anjanavakil) na [jsconf.eu 2019](https://jsconf.eu) onde ela explica o esquema de acesso aos atributos por árvore, hashs e conversão desses hashs em binário. Ela mostra também exemplos com o Mori e com uma lib do Facebook chamada [ImmutableJS](https://immutable-js.github.io/immutable-js/) para cenários de imutabilidade com esse acabamos de analisar. 
 
 {% include youtubePlayer.html id='Wo0qiGPSV-s' %}
