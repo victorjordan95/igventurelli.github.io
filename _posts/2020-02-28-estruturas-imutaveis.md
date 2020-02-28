@@ -19,8 +19,7 @@ arr2[0] = 'x'
 Ao fazer isso, internamente são criados dois arrays completamente diferentes, porém com alguns valores em comum.  
 Não seria mais interessante se fosse possível fazer o que aparentemente fazemos com esse código: criar o `arr2` "baseado" em `arr`, dessa forma otimizando memória?
 
-Sim, com certeza.  
-Por sorte isso é possível \o/
+Com certeza.  
 
 Uma forma "simples" de fazer isso é dividindo o nosso array em pequenos arrays e dessa forma, juntar as partes necessárias.
 
@@ -49,13 +48,49 @@ const mori = require('mori')
 
 const arr = mori.vector('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
 const arr2 = mori.assoc(arr, 0, 'x')
-// arr2 => ['x', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+// arr2 => ['x' 'b' 'c' 'd' 'e' 'f' 'g' 'h']
 {% endhighlight %}
 
 
 Legal, né?  
 Mas.. qual é a mágica por trás dessa lib?
 Bom, a solução é bem complexa, mas de uma maneira bem simplista, podemos pensar no acesso a cada posição do array através de árvore, organizada pelos hashs dos elementos. 
+
+Um ponto interessante é que se repararmos bem, `arr2` não é mais um "array" normal do JS.  
+Note que não tem vírgulas entre os elementos (não, não foi falha de digitação :p).  
+Isso ocorre pois o Mori não trabalha com os arrays em sua forma "natural". Na verdade, é bem diferente. Se fizermos um `console.log(arr2)` teremos:
+
+{% highlight js %}
+W {
+  k: null,
+  g: 8,
+  shift: 5,
+  root: ef {
+    u: null,
+    e: [
+      null, null, null, null, null,
+      null, null, null, null, null,
+      null, null, null, null, null,
+      null, null, null, null, null,
+      null, null, null, null, null,
+      null, null, null, null, null,
+      null, null
+    ]
+  },
+  W: [
+    'x', 'b', 'c',
+    'd', 'e', 'f',
+    'g', 'h'
+  ],
+  p: null,
+  j: 167668511,
+  q: 8196
+}
+{% endhighlight %}
+
+Doido né?  
+Mas acredite, o Mori foi criado, desde o começo, visando performance e otimização de memória e processamento.  
+Dessa forma, é preferivel trabalhar com a lib ao invés de manipular arrays na mão.
 
 Aqui foi colocado um exemplo bem simples do Mori, mas vale dar uma olhada na documentação da lib pois tem várias funções maneiras para trabalhar com objetos e arrays, bem como a explicação mais detalhada de como a lib em si funciona.
 
