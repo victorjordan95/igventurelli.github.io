@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Imutabilidade"
-date:   2020-02-28 17:18:58 -0300
+title:  "Estruturas Imutáveis"
+date:   2020-02-28 16:18:58 -0300
 categories: programacao js
 ---
 Ao falar sobre imutabilidade o pensamento que nos vem a cabeça é: _simples, é só fazer cópia das variáveis ao invés de manipular a mesma_.  
@@ -55,6 +55,10 @@ const arr2 = mori.assoc(arr, 0, 'x')
 
 Legal, né?  
 Mas.. qual é a mágica por trás dessa lib?
-Bom, a solução é bem complexa, mas de uma maneira bem simplista, podemos pensar no acesso a cada posição do array através de árvore, organizada pelos hashs dos elementos. Aqui tem um vídeo da Anjana Vakil na [jsconf.eu](https://jsconf.eu) onde ela explica isso com mais detalhes.
+Bom, a solução é bem complexa, mas de uma maneira bem simplista, podemos pensar no acesso a cada posição do array através de árvore, organizada pelos hashs dos elementos. 
+
+Aqui foi colocado um exemplo bem simples do Mori, mas vale dar uma olhada na documentação da lib pois tem várias funções maneiras para trabalhar com objetos e arrays, bem como a explicação mais detalhada de como a lib em si funciona.
+
+Para fazer esse post, eu me baseei nesse vídeo da Anjana Vakil na [jsconf.eu 2019](https://jsconf.eu) onde ela explica o esquema de acesso aos atributos por árvore, hashs e conversão desses hashs em binário. Ela mostra também exemplos com o Mori e com uma lib do Facebook chamada [ImmutableJS](https://immutable-js.github.io/immutable-js/) para cenários de imutabilidade com esse acabamos de analisar. 
 
 {% include youtubePlayer.html id='Wo0qiGPSV-s' %}
