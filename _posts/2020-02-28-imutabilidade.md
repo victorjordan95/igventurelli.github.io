@@ -55,6 +55,6 @@ const arr2 = mori.assoc(arr, 0, 'x')
 
 Legal, né?  
 Mas.. qual é a mágica por trás dessa lib?
-Bom, a solução é bem complexa, mas de uma maneira bem simplista, podemos pensar no acesso a cada posição do array através de árvore, organizada pelos hashs dos elementos. Aqui tem um vídeo da Anjana Vakil na jsconf.eu onde ela explica isso com mais detalhes.
+Bom, a solução é bem complexa, mas de uma maneira bem simplista, podemos pensar no acesso a cada posição do array através de árvore, organizada pelos hashs dos elementos. Aqui tem um vídeo da Anjana Vakil na [jsconf.eu](https://jsconf.eu) onde ela explica isso com mais detalhes.
 
 {% include youtubePlayer.html id='Wo0qiGPSV-s' %}
